@@ -1,8 +1,8 @@
 CXX = c++
 
-EXECUTABLE = 
+EXECUTABLE = petShop
 
-OBJS = 
+OBJS = petShop.o VirtualPet.o Pokemon.o Pikachu.o Digimon.o Gatoman.o
 
 .PHONY: all clean
 

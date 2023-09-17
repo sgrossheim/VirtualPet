@@ -9,6 +9,7 @@ class Pikachu : public Pokemon
 	public:
 		Pikachu(const string& pikachuName, const string& speciesType, int ePower);
 		void useElectricShock();
+		int getElectricPower();
 };
 
 #endif

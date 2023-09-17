@@ -5,10 +5,12 @@
 class Gatoman : public Digimon
 {
 	private:
-		int catClawSharpness
+		int catClawSharpness;
+		
 	public:
-		Digimon(const string& gatomanName, const string& elemType, int clawSharpness);
+		Gatoman(const string& gatomanName, const string& elemType, int clawSharpness);
 		void useCatClawAttack();
+		int getSharpnessLevel() const;
 };
 
 #endif

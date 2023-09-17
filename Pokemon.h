@@ -7,11 +7,8 @@ class Pokemon : public VirtualPet {
 	private:
 		string species;
 		int health;
-
 	protected:
 		void increaseHappiness(int amount);
-
-	
 	public:
 		Pokemon(const string& pokemonName, const string& speciesName);
 		void takeDamage(int damage);

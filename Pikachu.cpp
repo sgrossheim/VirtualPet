@@ -7,6 +7,12 @@ Pikachu::Pikachu(const string& pikachuName, const string& speciesType, int ePowe
 
 void Pikachu::useElectricShock()
 {
-	cout << "Using electric shock" << endl;
+	// When Pikachus attack they have to regenerate their electric power
+	cout << "Pikachu: Using Electric Shock" << endl;
+	electricPower -= 20;
 }
 
+int Pikachu::getElectricPower()
+{
+	return electricPower;
+}

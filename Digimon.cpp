@@ -7,7 +7,9 @@ Digimon::Digimon(const string& digimonName, const string& elem) : VirtualPet(dig
 
 void Digimon::useSpecialAttack()
 {
-	cout << "Using Special Attack" << endl;	
+	// When digimons attack, they get really hungry
+	cout << "Digimon: Using Special Attack" << endl;
+	increaseHunger(100);
 }
 
 string Digimon::getElement() const

@@ -8,7 +8,7 @@ class Pokemon : public VirtualPet {
 		string species;
 		int health;
 	protected:
-		void increaseHappiness(int amount);
+		void increaseHappiness(int amount) override;
 	public:
 		Pokemon(const string& pokemonName, const string& speciesName);
 		void takeDamage(int damage);
